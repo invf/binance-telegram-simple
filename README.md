@@ -1,6 +1,7 @@
 # binance-telegram-simple
 The project was created as basic configuration for managing trading strategies from telegram.
-Installation:
-  pip install time
-  pip install emoji
-  pip install pyTelegramBotAPI
+
+### Installing:
+
+<pre>$ pip install time</pre>
+<pre>$ pip install pyTelegramBotAPI</pre>
