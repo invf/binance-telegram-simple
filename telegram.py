@@ -35,10 +35,10 @@ def callback_worker_promo(call):
 
     while True:
 
-        msg = 'Insert any function and start every 30 seconds'
+        msg = 'Insert any function and start every 10 seconds'
         bot.send_message(chat_id, msg)
 
-        time.sleep(30)
+        time.sleep(10)
 
 
 @bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_info'))
