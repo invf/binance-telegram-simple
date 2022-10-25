@@ -1,4 +1,4 @@
-# binance-telegram-simple
+# Introduction
 The project was created as basic configuration for managing trading strategies from telegram.
 
 ### Installing:
@@ -9,5 +9,7 @@ $ pip install time
 $ pip install pyTelegramBotAPI
 ```
 ```python
-pip install emoji
+$ pip install emoji
 ```
+### Description:
+This bot can run function with trading strategy that sends in the Telegram signals after certain time. But, this version only sends signal.
