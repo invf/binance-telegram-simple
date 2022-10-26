@@ -41,3 +41,20 @@ def handle_text(message):
         bot.send_message(message.chat.id, msg, reply_markup=keyboard)
 ```
 Result:
+
+This function to handle the command "START" in Menu.
+```python
+@bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_start'))
+def callback_worker_promo(call):
+    msg = emoji.emojize(":popcorn:") + 'Good luck!'
+    bot.send_message(call.message.chat.id, msg)
+    chat_id = call.message.chat.id
+
+    while True:
+
+        msg = 'Insert any function and start every 10 seconds'
+        bot.send_message(chat_id, msg)
+
+        time.sleep(10)
+  ```
+  Result:
