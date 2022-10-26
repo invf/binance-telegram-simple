@@ -26,6 +26,8 @@ def start(message, res=False):
  Result:
  
 ```python
+his function to handle the command "COMMANDS" in Telegram.
+
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
     if message.text.strip() == 'COMMANDS':
@@ -38,3 +40,4 @@ def handle_text(message):
         msg = emoji.emojize(":rocket:") + 'Press START.\nIf you have some questions, press HELP.'
         bot.send_message(message.chat.id, msg, reply_markup=keyboard)
 ```
+Result:
