@@ -47,6 +47,7 @@ Result:
 ![My Image](screenshots/handle_text.png)
 
 This function to handle the command "START" in Menu.
+
 ```python
 @bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_start'))
 def callback_worker_promo(call):
@@ -65,6 +66,8 @@ def callback_worker_promo(call):
 
 ![My Image](screenshots/callback_worker_promo.png)
 
+This function to handle the command "INFO" in Menu.
+
 ```python
 @bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_info'))
 def callback_worker_info(call):
@@ -74,6 +77,8 @@ def callback_worker_info(call):
   Result:
 
 ![My Image](screenshots/callback_worker_info.png)
+
+This function to handle the command "CHECK" in Menu. If you need to check working bot or not.
 
 ```python
 @bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_check'))
