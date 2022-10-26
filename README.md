@@ -25,6 +25,8 @@ def start(message, res=False):
  ```
  Result:
  
+ ![My Image](screenshots/func_start.png)
+ 
  This function to handle the command "COMMANDS" in Telegram.
  
 ```python
@@ -42,6 +44,8 @@ def handle_text(message):
 ```
 Result:
 
+![My Image](screenshots/handle_text.png)
+
 This function to handle the command "START" in Menu.
 ```python
 @bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_start'))
@@ -58,3 +62,5 @@ def callback_worker_promo(call):
         time.sleep(10)
   ```
   Result:
+
+![My Image](screenshots/callback_worker_promo.png)
