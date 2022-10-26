@@ -25,3 +25,16 @@ def start(message, res=False):
  ```
  Result:
  
+```python
+@bot.message_handler(content_types=["text"])
+def handle_text(message):
+    if message.text.strip() == 'COMMANDS':
+        keyboard = types.InlineKeyboardMarkup()
+        btn_start = types.InlineKeyboardButton(text='START', callback_data='cycle_start')
+        btn_info = types.InlineKeyboardButton(text='INFO', callback_data='cycle_info')
+        btn_check = types.InlineKeyboardButton(text='CHECK', callback_data='cycle_check')
+        keyboard.add(btn_start)
+        keyboard.add(btn_check, btn_info)
+        msg = emoji.emojize(":rocket:") + 'Press START.\nIf you have some questions, press HELP.'
+        bot.send_message(message.chat.id, msg, reply_markup=keyboard)
+```
