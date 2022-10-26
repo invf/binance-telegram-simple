@@ -25,9 +25,9 @@ def start(message, res=False):
  ```
  Result:
  
+ This function to handle the command "COMMANDS" in Telegram.
+ 
 ```python
-his function to handle the command "COMMANDS" in Telegram.
-
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
     if message.text.strip() == 'COMMANDS':
