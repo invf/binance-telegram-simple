@@ -64,3 +64,23 @@ def callback_worker_promo(call):
   Result:
 
 ![My Image](screenshots/callback_worker_promo.png)
+
+```python
+@bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_info'))
+def callback_worker_info(call):
+    msg = 'Strategy for trading on the Binance'
+    bot.answer_callback_query(callback_query_id=call.id, text=msg, show_alert=True)
+```
+  Result:
+
+![My Image](screenshots/callback_worker_info.png)
+
+```python
+@bot.callback_query_handler(func=lambda call: call.data.startswith('cycle_check'))
+def callback_worker_check(call):
+    msg = emoji.emojize(":thumbs_up:") + 'I am here'
+    bot.send_message(call.message.chat.id, msg)
+```
+  Result:
+
+![My Image](screenshots/callback_worker_check.png)
