@@ -1,5 +1,5 @@
 # Introduction
-The project was created as basic configuration for managing trading strategies from telegram.
+This project was created as basic configuration for managing trading strategies from telegram.
 
 ### Installing:
 ```
